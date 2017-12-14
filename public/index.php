@@ -17,3 +17,4 @@ define('CONF_PATH',__DIR__ . '/../conf/');
 define('EXTEND_PATH',__DIR__ . '/../extend/');
 // 加载框架引导文件
 require __DIR__ . '/../thinkphp/start.php';
+
