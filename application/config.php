@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // +----------------------------------------------------------------------
 // | ThinkPHP [ WE CAN DO IT JUST THINK ]
 // +----------------------------------------------------------------------
@@ -19,7 +19,7 @@ return [
     // 应用调试模式
     'app_debug'              => true,
     // 应用Trace
-    'app_trace'              => false,
+    'app_trace'              => true,
     // 应用模式状态
     'app_status'             => 'office',
     // 是否支持多模块
@@ -124,6 +124,7 @@ return [
     'template'               => [
         // 模板引擎类型 支持 php think 支持扩展
         'type'         => 'Think',
+        'compile_type'  =>  '\think\sae\Template',
         // 模板路径
         'view_path'    => '',
         // 模板后缀
@@ -164,14 +165,14 @@ return [
     // | 日志设置
     // +----------------------------------------------------------------------
 
-    'log'                    => [
-        // 日志记录方式，内置 file socket 支持扩展
-        'type'  => 'File',
-        // 日志保存目录
-        'path'  => LOG_PATH,
-        // 日志记录级别
-        'level' => [],
-    ],
+    // 'log'                    => [
+    //     // 日志记录方式，内置 file socket 支持扩展
+    //     'type'  => '\think\sae\Log',
+    //     // 日志保存目录
+    //     'path'  => LOG_PATH,
+    //     // 日志记录级别
+    //     'level' => [],
+    // ],
 
     // +----------------------------------------------------------------------
     // | Trace设置 开启 app_trace 后 有效
@@ -187,7 +188,7 @@ return [
 
     'cache'                  => [
         // 驱动方式
-        'type'   => 'File',
+        'type'   => '\think\sae\Cache',
         // 缓存保存目录
         'path'   => CACHE_PATH,
         // 缓存前缀

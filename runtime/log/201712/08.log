@@ -1,0 +1,33 @@
+---------------------------------------------------------------
+[ 2017-12-08T13:47:41+08:00 ] 0.0.0.0 GET /tp5/public/index.php
+[ error ] [4]语法错误: unexpected '}', expecting ',' or ';'
+---------------------------------------------------------------
+[ 2017-12-08T13:48:19+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/getBanner
+[ error ] [1]Call to undefined function app\index\controller\mysqli_connet()
+---------------------------------------------------------------
+[ 2017-12-08T13:48:49+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/getBanner
+[ error ] [2]mysqli_query() expects at least 2 parameters, 1 given
+---------------------------------------------------------------
+[ 2017-12-08T14:41:33+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/getBanner
+[ error ] [2]mysql_query() expects parameter 1 to be string, object given
+---------------------------------------------------------------
+[ 2017-12-08T15:29:53+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/getBanner
+[ error ] [2]mysql_query(): Access denied for user ''@'localhost' (using password: NO)
+---------------------------------------------------------------
+[ 2017-12-08T15:30:05+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/getBanner
+[ error ] [2]mysqli_query() expects parameter 1 to be mysqli, resource given
+---------------------------------------------------------------
+[ 2017-12-08T15:33:42+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/getBanner
+[ error ] [2]mysql_select_db() expects parameter 1 to be string, resource given
+---------------------------------------------------------------
+[ 2017-12-08T15:33:53+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/getBanner
+[ error ] [2]mysql_query() expects parameter 1 to be string, resource given
+---------------------------------------------------------------
+[ 2017-12-08T15:39:06+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/getBanner
+[ error ] [2]mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given
+---------------------------------------------------------------
+[ 2017-12-08T16:02:54+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/getBanner
+[ error ] [2]mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given
+---------------------------------------------------------------
+[ 2017-12-08T16:03:09+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/getBanner
+[ error ] [2]mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given
