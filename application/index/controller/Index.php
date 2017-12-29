@@ -4,41 +4,35 @@ namespace app\index\controller;
 header('Access-Control-Allow-Origin:*');
 header("Content-Type: text/html; charset=utf8");
 use think\Db;
-
+use think\Session;
 class Index
 {   public function index()
     {   
-        echo date('Y-m-d H:i:s');
+        echo "hello\r\n";//unix系统使用\n；windows系统下\r\n 
+        echo "world!"; 
     }   
     public function login()
     {   
-        $username=isset($_GET['username']) ? $_GET['username'] : '';
-        $password=isset($_GET['password']) ? $_GET['password'] : '';
-        $sqlcon = mysqli_connect('localhost','root','root');
-        if(!$sqlcon){
-            echo '数据库连接不成功';
+        $username=isset($_GET['username']) ? $_GET['username'] : 'admin';
+        $password=isset($_GET['password']) ? $_GET['password'] : '123456';
+        $data=Db::table('w_user')->where('username',$username)->where('password',$password)->find();
+        if($data){
+            Session::set('uid',$data['userId']);
+            $uid=Session::get('uid');
+            $result=[
+                'code' => 200,
+                'msg'  => 'success',
+                'data' => $data
+            ];
+            return json_encode($result,JSON_UNESCAPED_UNICODE);
+        }else{
+            $result=[
+                'code' => 400,
+                'msg'  => 'err',
+                'data' => '账号或密码错误'
+            ];
+            return json_encode($result,JSON_UNESCAPED_UNICODE);
         }
-        mysqli_query($sqlcon,'set names utf8');
-        mysqli_select_db($sqlcon, 'kzdd' );
-        $sql='select * from user';
-        $res=mysqli_query($sqlcon,$sql);
-        if(!$res){
-            echo '无法读取数据：'.mysqli_error($sqlcon);
-        }
-        while($row = mysqli_fetch_array($res, MYSQL_ASSOC)){
-            if($username!=$row['username']){
-                $result=['result' => '用户名不存在'];
-            }
-            if($username==$row['username']&&$password==$row['password']){
-                $result=['result' => 'success'];
-            }
-            if($username==$row['username']&&$password!=$row['password']){
-                $result=['result' => '密码错误'];
-            }
-            echo json_encode($result);
-            return;
-        }
-        mysqli_close($sqlcon);
     }
     public function getBanner(){
         $con=mysqli_connect('localhost','root','root');
@@ -187,7 +181,7 @@ class Index
             return json_encode($result,JSON_UNESCAPED_UNICODE);
         }
         $UserId=$_GET['UserId'];
-        $data=Db::table('kzdd_address')->where('UserId',$UserId)->select();
+        $data=Db::table('kzdd_address')->where('UserId',$UserId)->order('Time desc')->select();
         $result=array(
             'code'    => 200,
             'message' => 'success',
@@ -198,33 +192,38 @@ class Index
     public function addAddress()
     {
 
-        // if(!isset($_GET['UserId'])||!isset($_GET['AddressList'])){
-        //     $result=[
-        //         'code' => 400,
-        //         'data' => 'err',
-        //         'msg'  => '缺少参数'
-        //     ];
-        //     return json_encode($result,JSON_UNESCAPED_UNICODE);
-        // }
-        $UserId=1;  //$_GET['UserId']
-        //$AddressList=$_GET['AddressList'];  //$_GET['AddressList']
-        $AddressList='{"receiver":"爱上房顶上","receiverPhone":"13125454121","provinceId":"110000","cityId":"110100","countId":"110101","address":"舒服撒","isDefault":1}';
-        $AddressList=json_decode($AddressList,true);
+        if(!isset($_GET['UserId'])||!isset($_GET['AddressList'])){
+            $result=[
+                'code' => 400,
+                'data' => 'err',
+                'msg'  => '缺少参数'
+            ];
+            return json_encode($result,JSON_UNESCAPED_UNICODE);
+        }
+        $UserId=$_GET['UserId']; 
+        //$AddressList='{"receiver":"爱上房顶上","receiverPhone":"13125454121","provinceId":"110000","cityId":"110100","countId":"110101","address":"舒服撒","isDefault":1}';
+        $AddressList=json_decode($_GET['AddressList'],true);
+        // 通过省市区id找出省市区对应信息
+        $province=Db::table('kzdd_provinces')->where('ProvinceId',$AddressList['provinceId'])->find();
+        $city=Db::table('kzdd_cities')->where('CityId',$AddressList['cityId'])->find();
+        $count=Db::table('kzdd_areas')->where('AreaId',$AddressList['countId'])->find();
         if($AddressList['isDefault']==1){
             $data=Db::table("kzdd_address")->where('UserId',$UserId)->where('IsDefault',1)->update(['IsDefault'=>0]);
-            dump($data);
         }
         $data=[
             'UserId' => $UserId,
             'Receiver' => $AddressList['receiver'],
             'ReceiverPhone' => $AddressList['receiverPhone'],
             'ProvinceId' => $AddressList['provinceId'],
+            'ProvinceDes' => $province['ProvinceDes'],
             'CityId' => $AddressList['cityId'],
+            'CityDes' => $city['CityDes'],
             'CountId' => $AddressList['countId'],
+            'CountDes' => $count['AreaDes'],
             'Address' => $AddressList['address'],
             'IsDefault' => $AddressList['isDefault'],
+            'Time' => date('Y-m-d H:i:s'),
         ];
-        dump($data);
         $res=Db::table('kzdd_address')->insert($data);
         if($res==1){
             $result=[
@@ -240,10 +239,37 @@ class Index
             return json_encode($result,JSON_UNESCAPED_UNICODE);
         }
 
-        //    var_dump($jssdk);
+        
     }
-    public function test()
-    {
-       echo 1;
+    public function setDefault()
+    {   
+        if(!isset($_GET['UserId'])||!isset($_GET['Id'])){
+            $result=[
+                'code' => 400,
+                'msg' => 'err',
+                'data'=>'缺少参数'
+            ];
+            return json_encode($result,JSON_UNESCAPED_UNICODE);
+        }
+        $UserId=$_GET["UserId"];
+        $Id=$_GET["Id"];
+        // 先将默认的地址改为非默认地址
+        Db::table('kzdd_address')->where('UserId',$UserId)->where('IsDefault',1)->update(['IsDefault'=>0]);
+        $data=Db::table('kzdd_address')->where('UserId',$UserId)->where('Id',$Id)->update(['IsDefault'=>1]);
+        if($data){
+            $result=[
+                'code' => 200,
+                'msg' => 'success',
+                'data'=>'修改成功'
+            ];
+            
+        }else{
+            $result=[
+                'code' => 400,
+                'msg' => 'err',
+                'data'=>'修改失败'
+            ];
+        }
+        return json_encode($result,JSON_UNESCAPED_UNICODE);
     }
 }
