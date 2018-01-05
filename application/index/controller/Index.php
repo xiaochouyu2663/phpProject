@@ -2,6 +2,7 @@
 namespace app\index\controller;
 
 header('Access-Control-Allow-Origin:*');
+header('Access-Control-Allow-Methods: GET, POST, PUT,DELETE');
 header("Content-Type: text/html; charset=utf8");
 use think\Db;
 use think\Session;
@@ -16,8 +17,20 @@ class Index
         $username=isset($_GET['username']) ? $_GET['username'] : 'admin';
         $password=isset($_GET['password']) ? $_GET['password'] : '123456';
         $data=Db::table('w_user')->where('username',$username)->where('password',$password)->find();
+        
+
         if($data){
-            Session::set('uid',$data['userId']);
+
+            $chars='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz';
+            $string=time();
+            for($len = count($chars);$len>0;$len--)
+            {
+                $position=rand()%strlen($chars);
+                $position2=rand()%strlen($string);
+                $string=substr_replace($string,substr($chars,$position,1),$position2,0);
+            }
+            $data['token']=$string;
+            Session::set('uid',$string);
             $uid=Session::get('uid');
             $result=[
                 'code' => 200,
@@ -271,5 +284,10 @@ class Index
             ];
         }
         return json_encode($result,JSON_UNESCAPED_UNICODE);
+    }
+    public function upload()
+    {
+        $fileContent=isset($_POST['fileContent'])?$_POST['fileContent']:'';
+        return $fileContent;
     }
 }
