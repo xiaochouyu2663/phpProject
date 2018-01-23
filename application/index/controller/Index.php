@@ -1,28 +1,10 @@
 <?php
 namespace app\index\controller;
-<<<<<<< HEAD
 header('Access-Control-Allow-Origin:*');
 header("Content-Type: text/html; charset=utf8");
 use think\Db;
-=======
-<<<<<<< HEAD
-use wechat\Jssdk;
-use think\Db;
+use think\Session;
 
-$appid = 'wxbf43be700bc7184a';
-$appsceret = '8b4c3edd3f70ed75015501cbc4029e7e';
-$jssdk=new Jssdk($appid,$appsceret);
-// $jssdk ->getAccessToken();
-=======
-use org\wechat\Jssdk;
-$appid = 'wxbf43be700bc7184a';
-$appsceret = '8b4c3edd3f70ed75015501cbc4029e7e';
-$jssdk = new Jssdk($appid,$appsceret);
-// $jssdk -> test();
-Jssdk::test();
-// var_dump($jssdk);
->>>>>>> 6351a6c6822a101280121a53a9eeb87a677b6717
->>>>>>> 194a9965d2a6e543ad459703140f93d4aed86651
 class Index
 {   public function index()
     {   
@@ -30,36 +12,31 @@ class Index
     }   
     public function login()
     {   
-        $username=isset($_GET['username']) ? $_GET['username'] : '';
-        $password=isset($_GET['password']) ? $_GET['password'] : '';
-        $sqlcon = mysqli_connect('localhost','root','root');
-        if(!$sqlcon){
-            echo '数据库连接不成功';
+        $username=isset($_GET['username']) ? $_GET['username'] : 'admin';
+        $password=isset($_GET['password']) ? $_GET['password'] : '123456';
+        $db=new Db;
+        // dump($db);
+        $data=Db::table('user')->where('username',$username)->where('password',$password)->find();
+        $char = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $string='';
+        for($i = count($char); $i > 0; $i--) {
+            $string .= $char[mt_rand(0, strlen($char) - 1)];
         }
-        mysqli_query($sqlcon,'set names utf8');
-        mysqli_select_db($sqlcon, 'kzdd' );
-        $sql='select * from user';
-        $res=mysqli_query($sqlcon,$sql);
-        if(!$res){
-            echo '无法读取数据：'.mysqli_error($sqlcon);
+        
+
+        if($data){
+            
+            $data['token']=$string;
+            $result=[
+                'code' => 200,
+                'msg'  => 'success',
+                'data' => $data
+            ];
+            return json_encode($result,JSON_UNESCAPED_UNICODE);
         }
-        while($row = mysqli_fetch_array($res, MYSQL_ASSOC)){
-            if($username!=$row['username']){
-                $result=['result' => '用户名不存在'];
-            }
-            if($username==$row['username']&&$password==$row['password']){
-                $result=['result' => 'success'];
-            }
-            if($username==$row['username']&&$password!=$row['password']){
-                $result=['result' => '密码错误'];
-            }
-            echo json_encode($result);
-            return;
-        }
-        mysqli_close($sqlcon);
     }
     public function getBanner(){
-        $con=mysqli_connect('localhost','root','root');
+        $con=mysqli_connect('localhost:3306','root','root');
         if(!$con){
             echo '连接数据不成功';
         }
@@ -70,7 +47,7 @@ class Index
 
 
         mysqli_select_db($con,'kzdd');
-        $selectStr='select * from products';
+        $selectStr='select * from user';
         // $selectStr='INSERT INTO test (name , id) VALUES ("哈哈哈","送达方式")';
         $res=mysqli_query($con,$selectStr);
         if(!$res){
@@ -215,7 +192,6 @@ class Index
     }
     public function addAddress()
     {
-<<<<<<< HEAD
         // if(!isset($_GET['UserId'])||!isset($_GET['AddressList'])){
         //     $result=[
         //         'code' => 400,
@@ -257,22 +233,9 @@ class Index
             ];
             return json_encode($result,JSON_UNESCAPED_UNICODE);
         }
-=======
-<<<<<<< HEAD
-        $access_token=json_decode(file_get_contents(EXTEND_PATH.'wechat/access_token.json'));
-        var_dump($access_token);
     }
-    public function getData()
+    public function upload()
     {
-        $data=Db::table('user')->select();
-        return view();
-=======
-        //    var_dump($jssdk);
-    }
-    public function test()
-    {
-       echo 1;
->>>>>>> 6351a6c6822a101280121a53a9eeb87a677b6717
->>>>>>> 194a9965d2a6e543ad459703140f93d4aed86651
+        $photoSrc=$_POST['photoSrc'];
     }
 }

@@ -5,9 +5,7 @@ class Demo
 {
     public function index()
     {
-       return [
-           'code'=>200
-       ];
+       echo 1;
     }
     public function linkdb()
     {

@@ -1,0 +1,1873 @@
+---------------------------------------------------------------
+[ 2017-12-30T09:56:12+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/address?UserId=1
+[ info ] localhost/tp5/public/index.php/index/index/address?UserId=1 [运行时间：1.746711s][吞吐率：0.57req/s] [内存消耗：1,771.73kb] [文件加载：29]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'address',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Mobile Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'UserId' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->address[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+[D:\phpStudy\WWW\tp5\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2017-12-30T10:23:22+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/getBanner
+[ info ] localhost/tp5/public/index.php/index/index/getBanner [运行时间：2.045603s][吞吐率：0.49req/s] [内存消耗：1,071.34kb] [文件加载：25]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getBanner',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getBanner[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]mysqli_connect(): [D:\phpStudy\WWW\tp5\application\index\controller\Index.php:34]
+---------------------------------------------------------------
+[ 2017-12-30T10:23:22+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/productList?nowPage=1&pageSize=2
+[ info ] localhost/tp5/public/index.php/index/index/productList?nowPage=1&pageSize=2 [运行时间：2.060919s][吞吐率：0.49req/s] [内存消耗：1,071.88kb] [文件加载：25]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'productList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'nowPage' => '1',
+  'pageSize' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->productList[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]mysqli_connect(): [D:\phpStudy\WWW\tp5\application\index\controller\Index.php:61]
+---------------------------------------------------------------
+[ 2017-12-30T10:51:51+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/productList?nowPage=1&pageSize=2
+[ info ] localhost/tp5/public/index.php/index/index/productList?nowPage=1&pageSize=2 [运行时间：2.054091s][吞吐率：0.49req/s] [内存消耗：1,071.49kb] [文件加载：25]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'productList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'nowPage' => '1',
+  'pageSize' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->productList[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]mysqli_connect(): [D:\phpStudy\WWW\tp5\application\index\controller\Index.php:61]
+---------------------------------------------------------------
+[ 2017-12-30T10:51:51+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/getBanner
+[ info ] localhost/tp5/public/index.php/index/index/getBanner [运行时间：2.048452s][吞吐率：0.49req/s] [内存消耗：1,071.00kb] [文件加载：25]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getBanner',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getBanner[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]mysqli_connect(): [D:\phpStudy\WWW\tp5\application\index\controller\Index.php:34]
+---------------------------------------------------------------
+[ 2017-12-30T10:51:51+08:00 ] 0.0.0.0 GET /tp5/public/index.php
+[ info ] localhost/tp5/public/index.php [运行时间：0.028895s][吞吐率：34.61req/s] [内存消耗：1,024.10kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'accept-encoding' => 'compress,gzip',
+  'connection' => 'Close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T10:51:51+08:00 ] 0.0.0.0 GET /tp5/public/index.php
+[ info ] localhost/tp5/public/index.php [运行时间：0.026067s][吞吐率：38.36req/s] [内存消耗：1,024.10kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'accept-encoding' => 'compress,gzip',
+  'connection' => 'Close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T11:56:44+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/getBanner
+[ info ] localhost/tp5/public/index.php/index/index/getBanner [运行时间：2.034795s][吞吐率：0.49req/s] [内存消耗：1,071.34kb] [文件加载：25]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getBanner',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getBanner[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]mysqli_connect(): [D:\phpStudy\WWW\tp5\application\index\controller\Index.php:34]
+---------------------------------------------------------------
+[ 2017-12-30T11:56:44+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/productList?nowPage=1&pageSize=2
+[ info ] localhost/tp5/public/index.php/index/index/productList?nowPage=1&pageSize=2 [运行时间：2.035583s][吞吐率：0.49req/s] [内存消耗：1,071.86kb] [文件加载：25]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'productList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'nowPage' => '1',
+  'pageSize' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->productList[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]mysqli_connect(): [D:\phpStudy\WWW\tp5\application\index\controller\Index.php:61]
+---------------------------------------------------------------
+[ 2017-12-30T11:56:56+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.014969s][吞吐率：66.81req/s] [内存消耗：1,026.93kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T11:56:56+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015799s][吞吐率：63.29req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T11:57:00+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=1
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=1 [运行时间：0.017261s][吞吐率：57.93req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T11:57:01+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.016516s][吞吐率：60.55req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T11:57:02+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.017024s][吞吐率：58.74req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T11:57:02+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.013911s][吞吐率：71.89req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T11:57:03+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=1
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=1 [运行时间：0.019660s][吞吐率：50.86req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T11:57:06+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.018485s][吞吐率：54.10req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T11:57:08+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=1
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=1 [运行时间：0.015509s][吞吐率：64.48req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T11:57:11+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.016216s][吞吐率：61.67req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:03:22+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.017087s][吞吐率：58.52req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:03:22+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.014593s][吞吐率：68.53req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:04:01+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015243s][吞吐率：65.60req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:04:01+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015093s][吞吐率：66.26req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:05:30+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.019317s][吞吐率：51.77req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:05:30+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015891s][吞吐率：62.93req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:06:25+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015676s][吞吐率：63.79req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:06:25+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015699s][吞吐率：63.70req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:06:37+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.016155s][吞吐率：61.90req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:06:37+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015498s][吞吐率：64.52req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:12:36+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.020159s][吞吐率：49.61req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:12:36+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015247s][吞吐率：65.59req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:12:49+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015350s][吞吐率：65.15req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:12:49+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015732s][吞吐率：63.56req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:13:20+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015615s][吞吐率：64.04req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:13:20+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.016476s][吞吐率：60.69req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:20:28+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.016271s][吞吐率：61.46req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:20:28+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015372s][吞吐率：65.05req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:21:15+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.019095s][吞吐率：52.37req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:21:15+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.017432s][吞吐率：57.37req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:21:56+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015254s][吞吐率：65.56req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:21:56+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.019247s][吞吐率：51.96req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:28:14+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.018530s][吞吐率：53.97req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:28:14+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.016074s][吞吐率：62.21req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:28:49+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015917s][吞吐率：62.83req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:28:49+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.016295s][吞吐率：61.37req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:29:24+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015852s][吞吐率：63.08req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:29:24+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.016091s][吞吐率：62.15req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:29:39+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.025299s][吞吐率：39.53req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:29:39+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015930s][吞吐率：62.77req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:30:23+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.016783s][吞吐率：59.58req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:30:23+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.016297s][吞吐率：61.36req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:30:53+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.016722s][吞吐率：59.80req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:30:53+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015889s][吞吐率：62.94req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:34:44+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.016466s][吞吐率：60.73req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:34:44+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015464s][吞吐率：64.67req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:36:17+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.016723s][吞吐率：59.80req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:36:17+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.016108s][吞吐率：62.08req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:36:32+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.021120s][吞吐率：47.35req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:36:32+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015875s][吞吐率：62.99req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:37:56+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015651s][吞吐率：63.89req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:37:56+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.014165s][吞吐率：70.60req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:38:36+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.016854s][吞吐率：59.33req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:38:36+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.013923s][吞吐率：71.82req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:39:17+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015349s][吞吐率：65.15req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:39:17+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.015574s][吞吐率：64.21req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:40:33+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.018830s][吞吐率：53.11req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T12:40:33+08:00 ] 0.0.0.0 GET /tp5/public/index.php/index/index/yreight?type=2
+[ info ] localhost/tp5/public/index.php/index/index/yreight?type=2 [运行时间：0.014119s][吞吐率：70.83req/s] [内存消耗：1,026.96kb] [文件加载：21]
+[ info ] [ LANG ] D:\phpStudy\WWW\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'yreight',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://localhost:8080/module/main.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->yreight[ D:\phpStudy\WWW\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
