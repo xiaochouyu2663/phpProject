@@ -135,4 +135,8 @@ class Index extends \think\Controller
             return json_encode(['code'=>1,'msg'=>'请求发送短信失败'],JSON_UNESCOPED_UNICODE);
         }
     }
+
+    public function updatePwd(){
+        
+    }    
 }
