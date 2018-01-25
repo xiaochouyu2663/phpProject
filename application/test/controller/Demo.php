@@ -1,11 +1,21 @@
 <?php
 namespace app\test\controller;
 use think\Db;
+use think\Validate;
 class Demo
 {
     public function index()
     {
-       echo 1;
+        $data=[
+            'name' => '3',
+            'pwd'  => ''
+        ];
+       $validate = new Validate([
+           'name' => 'require|regex:^3',
+           'pwd'  => 'require'
+       ]);
+       $result=$validate -> check($data);
+       dump($validate->getError());
     }
     public function linkdb()
     {
