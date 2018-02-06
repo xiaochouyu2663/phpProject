@@ -7,6 +7,7 @@ header('Access-Control-Allow-Headers: X-Requested-With,X_Requested_With,content-
 header("Content-type: text/html; charset=utf-8");
 class Account extends \think\Controller
 {
+
     /**function：登录 */
     /**author:sherry@2018/1/23 */
     public function login(){
@@ -257,5 +258,85 @@ class Account extends \think\Controller
                    
         return json_encode(['code'=>200,'msg'=>'密码重置成功','data'=>null],JSON_UNESCAPED_UNICODE);
         
-    }    
+    } 
+
+    /**function:获取省 2018-1-27*/
+    public function province(){
+
+        $data = db('province') -> field('ProvinceId,ProvinceDes') 
+                               -> order('ProvinceId')
+                               -> select();
+        if(!$data){
+            return json_encode(['code'=>1,'msg'=>'查询不成功','data'=>null],JSON_UNESCAPED_UNICODE);
+        }
+        return json_encode(['code'=>200,'msg'=>'查询成功','data'=>$data],JSON_UNESCAPED_UNICODE);
+    }   
+
+    /**function:获取市 2018-1-27*/
+    public function cities(){
+        $ProvinceId=input('ProvinceId','');
+        $data = db('cities') -> where('ProvinceId',$ProvinceId)
+                             -> field('CityId,CityDes')
+                             -> select();
+        if(!$data){
+            return json_encode(['code'=>1,'msg'=>'查询不成功','data'=>null],JSON_UNESCAPED_UNICODE);
+        }
+        return json_encode(['code'=>200,'msg'=>'查询成功','data'=>$data],JSON_UNESCAPED_UNICODE);
+    }  
+
+    /**function:获取区 2018-1-27*/
+    public function areas(){
+        $CityId=input('CityId','');
+        $data = db('areas') -> where('CityId',$CityId)
+                            -> field('AreaId,AreaDes')
+                            -> select();
+        if(!$data){
+            return json_encode(['code'=>1,'msg'=>'查询不成功','data'=>null],JSON_UNESCAPED_UNICODE);
+        }
+        return json_encode(['code'=>200,'msg'=>'查询成功','data'=>$data],JSON_UNESCAPED_UNICODE);
+    }  
+
+    /**function:新增地址 2018-1-27*/
+    public function newAddress(){
+        $receiver   = input('receiver','');
+        $provinceId = input('provinceId','');
+        $cityId     = input('cityId','');
+        $areaId     = input('areaId','');
+        $address    = input('address','');
+        $mobile     = input('mobile','');
+        $postcode   = input('postcode','');
+
+        $result = $this -> validate([
+            'receiver'   => $receiver,
+            'provinceId' => $provinceId,
+            'cityId'     => $cityId, 
+            'areaId'     => $areaId,
+            'address'    => $address,
+            'mobile'     => $mobile,
+            'postcode'   => $postcode
+        ],[
+            'receiver'   => 'require',
+            'provinceId' => 'require',
+            'cityId'     => 'require', 
+            'areaId'     => 'require',
+            'address'    => 'require',
+            'mobile'     => 'require|regex:^[1][13478][0-9]{9}$',
+            'postcode'   => 'length:6|number'
+        ],[
+            'receiver.require'   => '请填写收货人姓名',
+            'provinceId.require' => '请选择省',
+            'cityId.require'     => '请选择市', 
+            'areaId.require'     => '请选择区',
+            'address.require'    => '请填写详细地址',
+            'mobile.require'     => '请填写手机号',
+            'mobile.regex'       => '手机号格式不正确',
+            'postcode.length'    => '邮编是六位数字',
+            'postcode.number'    => '邮编是六位数字'
+        ]);
+
+        if($result!==true){
+            return json_encode(['code'=>1,'msg'=>$result,'data'=>null],JSON_UNESCAPED_UNICODE);
+        }
+    }
+
 }

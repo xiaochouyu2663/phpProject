@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="/static/js/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<button type="button" class="login">微信登录</button>
+	<script>
+		var locatonUrl=window.location.href;
+		console.log(encodeURIComponent(locatonUrl+'/getCode'))
+		$('.login').click(function(){
+			window.location='https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxf0e81c3bee622d60&redirect_uri='+encodeURIComponent(locatonUrl+'/getCode')+'&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect';
+		})
+	</script>
+</body>
+</html>
