@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.0/css/swiper.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.0/js/swiper.jquery.min.js"></script>
+<script src="/static/js/template.js"></script>
+	<style>
+		#content{
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	
+</body>
+</html>
+<!-- 引入简洁语法版js文件-->
+
+
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">slider1</div>
+    <div class="swiper-slide">slider2</div>
+    <div class="swiper-slide">slider3</div>
+  </div>
+</div>
+<!-- 编写模板,此模板放在html页面中,模板也可放在js文件中 -->
+<script type="text/html" id="tmp1">
+	  <div class="swiper-wrapper">
+	  	{{each swiperItem value index}}
+		    <div class="swiper-slide">
+		    	<img src="{{value.imgUrl}}" alt="">
+		    </div>
+	    {{/each}}
+	  </div>
+	  
+</script>
+<script >
+	// var data={
+	// 	swiperItem:[
+	// 		{
+	// 			imgUrl:'http://via.placeholder.com/350x250'
+	// 		},
+	// 		{
+	// 			imgUrl:'http://via.placeholder.com/350x350'
+	// 		},
+	// 		{
+	// 			imgUrl:'http://via.placeholder.com/350x450'
+	// 		}
+	// 	]
+	// }
+	// var html=template('tmp1',data);
+	// document.getElementById('content').innerHTML=html;
+
+	var mySwiper = new Swiper('.swiper-container', {
+	autoplay: 5000,//可选选项，自动滑动
+})
+	
+</script>

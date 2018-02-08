@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css" >
+        <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+        <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <script src="/static/js/jquery.min.js"></script>
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="/static/js/bootstrap.min.js" ></script>
+        <title>农哒商城</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    </head>
+    <!-- {include file="index/lib"} -->
+<body>
+    {include file="index/top" current="9"}
+    <div class="main">
+        <div class="diy-box">
+            <div id="diy-phone">
+                <div class="diy-phone-header">
+                    <i class="diy-phone-receiver"></i>
+                    <div class="diy-phone-title j-pagetitle">店铺主页</div>
+                </div>
+                <div class="diy-phone-container">
+                    <div class="diy-item" data-ori="module1">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="/static/uploadImg/201801141440064082240.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/static/uploadImg/201801141638539238380.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="diy-item-opt">
+                            <span>編輯</span>
+                            <span>刪除</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="diy-phone-footer"></div>
+                    
+            </div>
+            <div id="diy-ctrl">
+                <div class="diy-ctrl-item">
+                    <div class="formitems">
+                        <label class="fi-name">页面标题：</label>
+                        <div class="form-controls">
+                            <input maxlength="10" type="text" class="input j-pagetitle-ipt" value="店铺主页">
+                        </div>
+                    </div>
+                </div>
+                <div class="diy-ctrl-item" data-ori="module1">
+                    <div class="formitems banner-opt">
+                       <div class="banner-list">
+                           <div class="list-aside">
+                               <img src="/static/images/icon_orderamount.png" alt="">
+                               <span>上傳照片</span>
+                               <input type="file">
+                           </div>
+                           <div class="list-section">
+                               <div class="linkto">
+                                   <span>連接到：</span>
+                                   <input type="text">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="banner-list">
+                           <div class="list-aside">
+                               <img src="/static/images/icon_orderamount.png" alt="">
+                               <span>上傳照片</span>
+                               <input type="file" title="">
+                           </div>
+                           <div class="list-section">
+                               <div class="linkto">
+                                   <span>連接到：</span>
+                                   <input type="text" title="選擇圖片">
+                               </div>
+                           </div>
+                           
+                       </div>
+                       <div>
+                           <button  style="color:#fff;font-size:18px;margin-top:20px;outline:none;" type="button" class="btn btn-block add-banner">添加</button>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-block save">保存</button>
+    </div>
+    
+</body>
+</html>
+<script>
+    $(function(){
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: 2000,//可选选项，自动滑动
+            loop: true,
+            pagination: '.swiper-pagination'
+
+        })
+
+        var data={
+            banner:[
+                {
+                    goods_name:'玻尿酸',
+                    goods_image:'./uploadImg/201801141440064082240.jpg',
+                    fack_url:'http:www.baidu.com'
+                },
+                {
+                    goods_name:'玻尿酸',
+                    goods_image:'./uploadImg/201801141440064082240.jpg',
+                    fack_url:'http:www.baidu.com'
+                }
+            ]
+        }
+
+        $('.j-pagetitle-ipt').change(function(){
+            $('.j-pagetitle').text($(this).val())
+        })
+
+        //輪播圖添加按鈕功能
+        $('.add-banner').click(function(){
+            $item=$('<div class="banner-list">'+
+                       '<div class="list-aside">'+
+                           '<img src="/static/images/icon_orderamount.png" alt="">'+
+                           '<span>上傳照片</span>'+
+                           '<input type="file">'+
+                       '</div>'+
+                       '<div class="list-section">'+
+                           '<div class="linkto">'+
+                               '<span>連接到：</span>'+
+                               '<input type="text">'+
+                           '</div>'+
+                       '</div>'+
+                   '</div>');
+            // $item.fadeIn();
+            $(this).before($item.fadeIn());
+        });
+        $('.banner-opt').on('change','input',function(e){
+            var self = e.target
+            var fileRead=new FileReader();
+            var file=self.files[0];
+            fileRead.readAsDataURL(file);
+            fileRead.onload=function(){ 
+                $(self).prev().prev().attr('src',this.result)
+            }
+        })
+        
+
+        $('.save').click(function(){
+            $('#diy-ctrl div[data-ori^="module"] img').each(function(){
+                console.log($(this).attr('src'))
+            })
+        })
+    })
+</script>

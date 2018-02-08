@@ -13,11 +13,7 @@ return [
     // 数据库类型
     'type'            => 'mysql',
     // 服务器地址
-<<<<<<< HEAD
-    'hostname'        => 'localhost',
-=======
     'hostname'        => '127.0.0.1'
->>>>>>> 194a9965d2a6e543ad459703140f93d4aed86651
     // 数据库名
     'database'        => 'kzdd',
     // 用户名
@@ -35,7 +31,7 @@ return [
     // 数据库表前缀
     'prefix'          => '',
     // 数据库调试模式
-    'debug'           => false,
+    'debug'           => true,
     // 数据库部署方式:0 集中式(单一服务器),1 分布式(主从服务器)
     'deploy'          => 0,
     // 数据库读写是否分离 主从式有效
