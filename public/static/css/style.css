@@ -2,6 +2,27 @@ body{
     background: #f1f1f1;
     font-size: 12px;
 }
+.btn.btn-primary {
+    border-color: #357ebd;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 0 12px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    color: #333;
+    background-color: #fff;
+    border-radiu0s: 0px;
+    border: 1px solid #ccc;
+    vertical-align: baseline;
+    margin-top: 1px;
+    margin-bottom: 2px;
+}
 .header{
     position: fixed;
     top: 0;
@@ -259,4 +280,74 @@ body{
 .banner-list .list-section {
     
     overflow: hidden;
+}
+.diy-box {
+    outline: 1px solid red;
+    padding-left: 160px;
+    overflow: hidden;
+}
+.diy-action {
+    position: fixed;
+    width: 145px;
+    height: 435px;
+    top: 93px;
+    bottom: 0;
+    margin-left: -160px;
+    padding: 0 0px 10px 0px;
+    border: 0px solid #ccc;
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    z-index: 111;
+}
+.diy-actions-title {
+    height: 35px;
+    width: 100%;
+    font-weight: 700;
+    background: #666;
+    color: #fff;
+    padding-left: 12px;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    line-height: 35px;
+}
+.diy-actions-addModules {
+    margin-top: 15px;
+}
+.diy-actions-addModules .tab {
+    float: left;
+    margin-left: 11px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.diy-actions-addModules a {
+    display: table-cell;
+    width: 55px;
+    height: 40px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    color: #666;
+    text-decoration: none;
+    vertical-align: middle;
+    overflow: hidden;
+    line-height: 14px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.diy-actions-addModules a b {
+    font-weight: normal;
+}
+.diy-actions-submit {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    width: 1200px;
+    text-align: center;
+    padding: 5px 0;
+    margin-left: -160px;
+    background-color: rgba(43,54,67,0.8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#88435467, endColorstr=#88435467);
+}
+#j-savePage {
+    color: #fff;
 }
