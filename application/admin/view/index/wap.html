@@ -47,15 +47,8 @@
                 <div class="diy-phone-footer"></div>
                     
             </div>
+            
             <div id="diy-ctrl">
-                <div class="diy-ctrl-item">
-                    <div class="formitems">
-                        <label class="fi-name">页面标题：</label>
-                        <div class="form-controls">
-                            <input maxlength="10" type="text" class="input j-pagetitle-ipt" value="店铺主页">
-                        </div>
-                    </div>
-                </div>
                 <div class="diy-ctrl-item" data-ori="module1">
                     <div class="formitems banner-opt">
                        <div class="banner-list">
@@ -64,12 +57,23 @@
                                <span>上傳照片</span>
                                <input type="file">
                            </div>
-                           <div class="list-section">
-                               <div class="linkto">
-                                   <span>連接到：</span>
-                                   <input type="text">
+                           <div class="list-section form-horizontal">
+                               <div class="linkto form-group">
+                                   <label class="col-sm-2 control-label">连接：</label>
+                                   <div class="col-sm-10">
+                                     <input type="text" class="form-control link">
+                                   </div>
+                                   
+                               </div>
+                               <div class="name form-group">
+                                   <label class="col-sm-2 control-label">名称：</label>
+                                   <div class="col-sm-10">
+                                      <input type="text" class="form-control name">
+                                   </div>
+                                  
                                </div>
                            </div>
+                           
                        </div>
                        <div class="banner-list">
                            <div class="list-aside">
@@ -77,10 +81,20 @@
                                <span>上傳照片</span>
                                <input type="file" title="">
                            </div>
-                           <div class="list-section">
-                               <div class="linkto">
-                                   <span>連接到：</span>
-                                   <input type="text" title="選擇圖片">
+                           <div class="list-section form-horizontal">
+                               <div class="linkto form-group">
+                                   <label class="col-sm-2 control-label">连接：</label>
+                                   <div class="col-sm-10">
+                                     <input type="text"  class="form-control link">
+                                   </div>
+                                   
+                               </div>
+                               <div class="name form-group">
+                                   <label class="col-sm-2 control-label">名称：</label>
+                                   <div class="col-sm-10">
+                                     <input type="text" class="form-control name">
+                                   </div>
+                                   
                                </div>
                            </div>
                            
@@ -91,6 +105,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
         <button type="button" class="btn btn-block save">保存</button>
     </div>
@@ -143,7 +158,7 @@
             // $item.fadeIn();
             $(this).before($item.fadeIn());
         });
-        $('.banner-opt').on('change','input',function(e){
+        $('.banner-opt').on('change','input[type="file"]',function(e){
             var self = e.target
             var fileRead=new FileReader();
             var file=self.files[0];
@@ -153,10 +168,32 @@
             }
         })
         
-
+        var banner={}
         $('.save').click(function(){
+            
+            banner.index=1;
+            banner.decs='轮播图数据';
+            banner.data=[];
             $('#diy-ctrl div[data-ori^="module"] img').each(function(){
-                console.log($(this).attr('src'))
+                
+            })
+            $('.banner-list').each(function(index){
+              var obj ={};
+              obj.link=$(this).find('input.link').val();
+              obj.name=$(this).find('input.name').val();
+              obj.img=$(this).find('img').attr('src');
+              banner.data.push(obj)
+            })
+            console.log(banner)
+            $.ajax({
+              url:'http://www.cc.com/index.php/api/UpdateTemp/index',
+              type:'post',
+              data:{
+                content:JSON.stringify(banner)
+              },
+              success:function(res){
+                console.log(res)
+              }
             })
         })
     })
